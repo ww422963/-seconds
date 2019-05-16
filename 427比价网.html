@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML>
+<html>
+<tr>
+    <td><marquee>欢迎访问本网站！</marquee>&nbsp;</td>
+ </tr>
+<title>427比价网</title>
+	<div> 
+	<div style="margin-top: 80px;">
+    <div style="text-align: center; margin-left: -20px;">请输入产品型号
+	<input type="text" id="pname" name="123" /><form id="form2" action="www.taobao.com" method="get" target="_blank"> <form>
+    <div id="div">
+        <input type="button"  value="添加一个商品" onclick="addText()"/>
+    </div>
+</form>
+<script language="javascript"> 
+    function getValue1()
+    {
+        var v = document.getElementById("ptype");
+        alert(v.value);
+        window.location.href="https://search.jd.com/Search?keyword="+v.value+"&enc=utf-8&spm=2.1.7";
+    }
+ </script>
+<script type="text/javascript">
+    function addText(){
+        var div = document.getElementById("div");
+        div.innerHTML += "<div><input type='text'> <input type='button' value='删除' onclick='deleteText(this)'></div>";
+    }
+    function deleteText(This){
+        This.parentNode.parentNode.removeChild(This.parentNode);
+    }
+</script>
+			<div><div style="margin-top: 30px;">
+            <div style="text-align: center; margin-left: -20px;">请输入数量<input type="text" id="pnum" name="10" />
+			</div>
+				<div>	<button class="submit" type="submit" id="form" >搜索最划算方案</button>
+			</div>
+				</div>
+				<div>
+					<div>
+<form>
+	<div style="margin-top: 10px;">
+	<div style="text-align: center; margin-left: -50px;">
+	<input type="radio" name="stype" value="stm"  id="stb" /> <label for="stm" class="curr">淘宝</label> &nbsp;
+<br>
+	<div style="margin-top: 10px;">
+    <div style="text-align: center; margin-left: -5px;">
+	<input type="radio" name="stype" value="jd" id="sjd" /> <label for="sjd" class="curr">京东</label>  &nbsp;
+</form> 
+	</div>
+		<div>最优惠的方案<input type="text" id="pname" name="123" /></div>
+<script>
+	function addProduct(){
+	var strl = '<div>请输入商品型号<input type="text" id="plname" value="123"></div>'
+	strl += '<div>请输入数量<input type="text" id="plnum" value="10"></div>'
+		
+	document.write(str1>);
+	}
+</script>
+
+	<body style="background-color: #CCFFCC">
+  
+</body> 
+	</html>
